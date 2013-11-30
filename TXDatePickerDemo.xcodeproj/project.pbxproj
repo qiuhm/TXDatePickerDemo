@@ -22,7 +22,10 @@
 		D4A9FC5A1849F282008E921C /* txHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9FC591849F282008E921C /* txHeaderView.m */; };
 		D4A9FC5E1849F361008E921C /* txMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9FC5D1849F361008E921C /* txMainViewController.m */; };
 		D4A9FC611849F6A7008E921C /* txContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9FC601849F6A7008E921C /* txContentView.m */; };
-		D4A9FC64184A0991008E921C /* TXDatePickerDemo.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A9FC63184A0991008E921C /* TXDatePickerDemo.png */; };
+		D4A9FC64184A0991008E921C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A9FC63184A0991008E921C /* Icon.png */; };
+		D4A9FC66184A203A008E921C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A9FC65184A203A008E921C /* Default.png */; };
+		D4A9FC69184A20E8008E921C /* Default@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D4A9FC67184A20E8008E921C /* Default@2x.PNG */; };
+		D4A9FC6A184A20E8008E921C /* Default-568h@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D4A9FC68184A20E8008E921C /* Default-568h@2x.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +61,10 @@
 		D4A9FC5D1849F361008E921C /* txMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = txMainViewController.m; sourceTree = "<group>"; };
 		D4A9FC5F1849F6A7008E921C /* txContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txContentView.h; sourceTree = "<group>"; };
 		D4A9FC601849F6A7008E921C /* txContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = txContentView.m; sourceTree = "<group>"; };
-		D4A9FC63184A0991008E921C /* TXDatePickerDemo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TXDatePickerDemo.png; sourceTree = "<group>"; };
+		D4A9FC63184A0991008E921C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D4A9FC65184A203A008E921C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D4A9FC67184A20E8008E921C /* Default@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.PNG"; sourceTree = "<group>"; };
+		D4A9FC68184A20E8008E921C /* Default-568h@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.PNG"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +187,10 @@
 		D4A9FC62184A097C008E921C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D4A9FC63184A0991008E921C /* TXDatePickerDemo.png */,
+				D4A9FC67184A20E8008E921C /* Default@2x.PNG */,
+				D4A9FC68184A20E8008E921C /* Default-568h@2x.PNG */,
+				D4A9FC65184A203A008E921C /* Default.png */,
+				D4A9FC63184A0991008E921C /* Icon.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -263,8 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4A9FC331849E9C6008E921C /* InfoPlist.strings in Resources */,
-				D4A9FC64184A0991008E921C /* TXDatePickerDemo.png in Resources */,
+				D4A9FC64184A0991008E921C /* Icon.png in Resources */,
+				D4A9FC69184A20E8008E921C /* Default@2x.PNG in Resources */,
 				D4A9FC3B1849E9C6008E921C /* Images.xcassets in Resources */,
+				D4A9FC66184A203A008E921C /* Default.png in Resources */,
+				D4A9FC6A184A20E8008E921C /* Default-568h@2x.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

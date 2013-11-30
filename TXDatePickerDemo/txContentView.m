@@ -7,10 +7,11 @@
 //
 
 #import "txContentView.h"
-#define MINUTEINTERVAL 10;  //设置时间设置间隔
+#define MINUTEINTERVAL 10;  //设置时间间隔
 
 @implementation txContentView
 @synthesize txDatePicker ;
+@synthesize resultLabel ;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -18,15 +19,19 @@
     if (self) {
         // Initialization code
         self.txDatePicker = [[UIDatePicker alloc]initWithFrame:self.bounds];
-        self.txDatePicker.datePickerMode = UIDatePickerModeDateAndTime ; //设置样式
+        self.txDatePicker.datePickerMode = UIDatePickerModeDate ; //设置样式
         self.txDatePicker.minuteInterval = MINUTEINTERVAL;
         self.txDatePicker.timeZone = [NSTimeZone timeZoneWithName:@"GMT"];
-        self.txDatePicker.locale = [[NSLocale alloc]initWithLocaleIdentifier:@"chinese"];
+        self.txDatePicker.locale = [[NSLocale alloc]initWithLocaleIdentifier:@"zh_CN"];
         self.txDatePicker.minimumDate = [NSDate dateWithTimeIntervalSince1970:0];
-        self.txDatePicker.maximumDate = [NSDate dateWithTimeIntervalSinceNow:30000];
+        self.txDatePicker.maximumDate = [NSDate dateWithTimeIntervalSinceNow:300000];
+        self.resultLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 250, 320, 50)];
+        self.resultLabel.text = [NSString stringWithFormat:@"您选择的时间是："];
+        self.resultLabel.adjustsFontSizeToFitWidth = YES;
 
 
         [self addSubview:self.txDatePicker];
+        [self addSubview:self.resultLabel];
         
     }
     return self;

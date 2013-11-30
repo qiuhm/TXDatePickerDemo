@@ -10,4 +10,5 @@
 
 @interface txContentView : UIView
 @property (nonatomic , strong) UIDatePicker * txDatePicker;
+@property (nonatomic , strong) UILabel      * resultLabel;
 @end

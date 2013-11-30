@@ -19,7 +19,7 @@
         // Initialization code
         self.headerLabel = [[UILabel alloc] initWithFrame:self.bounds];
 
-        self.headerLabel.backgroundColor = [UIColor grayColor];
+        self.headerLabel.backgroundColor = [UIColor redColor];
         [self addSubview:self.headerLabel];
         
     }

@@ -23,7 +23,7 @@
         // Custom initialization
         self.headerView = [[txHeaderView alloc] initWithFrame:CGRectMake(0, 20, 320, 30)];
         self.headerView.headerLabel.text = [NSString stringWithFormat:@"请选择时间:"];
-        self.headerView.headerLabel.textColor = [UIColor blueColor];
+        self.headerView.headerLabel.textColor = [UIColor blackColor];
         [self.view addSubview:headerView];
         self.contentView = [[txContentView alloc]initWithFrame:CGRectMake(0, 100, 320, 430)];
         [self.contentView.txDatePicker addTarget:self action:@selector(dateChanged:)forControlEvents:UIControlEventValueChanged];
@@ -55,7 +55,8 @@
 #pragma datePicker
 - (void)dateChanged:(id)sender
 {
-    self.headerView.headerLabel.text = [self.contentView.txDatePicker.date description];
+//    self.headerView.headerLabel.text = [self.contentView.txDatePicker.date description];
+    self.contentView.resultLabel.text = [NSString stringWithFormat:@"您选择的时间是：%@",[self.contentView.txDatePicker.date description]];
 }
 
 @end
