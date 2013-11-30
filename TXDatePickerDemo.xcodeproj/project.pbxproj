@@ -19,6 +19,10 @@
 		D4A9FC441849E9C6008E921C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A9FC2C1849E9C6008E921C /* UIKit.framework */; };
 		D4A9FC4C1849E9C6008E921C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4A9FC4A1849E9C6008E921C /* InfoPlist.strings */; };
 		D4A9FC4E1849E9C6008E921C /* TXDatePickerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9FC4D1849E9C6008E921C /* TXDatePickerDemoTests.m */; };
+		D4A9FC5A1849F282008E921C /* txHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9FC591849F282008E921C /* txHeaderView.m */; };
+		D4A9FC5E1849F361008E921C /* txMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9FC5D1849F361008E921C /* txMainViewController.m */; };
+		D4A9FC611849F6A7008E921C /* txContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9FC601849F6A7008E921C /* txContentView.m */; };
+		D4A9FC64184A0991008E921C /* TXDatePickerDemo.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A9FC63184A0991008E921C /* TXDatePickerDemo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		D4A9FC491849E9C6008E921C /* TXDatePickerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TXDatePickerDemoTests-Info.plist"; sourceTree = "<group>"; };
 		D4A9FC4B1849E9C6008E921C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4A9FC4D1849E9C6008E921C /* TXDatePickerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXDatePickerDemoTests.m; sourceTree = "<group>"; };
+		D4A9FC581849F282008E921C /* txHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txHeaderView.h; sourceTree = "<group>"; };
+		D4A9FC591849F282008E921C /* txHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = txHeaderView.m; sourceTree = "<group>"; };
+		D4A9FC5C1849F361008E921C /* txMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txMainViewController.h; sourceTree = "<group>"; };
+		D4A9FC5D1849F361008E921C /* txMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = txMainViewController.m; sourceTree = "<group>"; };
+		D4A9FC5F1849F6A7008E921C /* txContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txContentView.h; sourceTree = "<group>"; };
+		D4A9FC601849F6A7008E921C /* txContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = txContentView.m; sourceTree = "<group>"; };
+		D4A9FC63184A0991008E921C /* TXDatePickerDemo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TXDatePickerDemo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +118,9 @@
 		D4A9FC2E1849E9C6008E921C /* TXDatePickerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D4A9FC62184A097C008E921C /* Resources */,
+				D4A9FC5B1849F31D008E921C /* Controllers */,
+				D4A9FC571849F232008E921C /* Views */,
 				D4A9FC371849E9C6008E921C /* txAppDelegate.h */,
 				D4A9FC381849E9C6008E921C /* txAppDelegate.m */,
 				D4A9FC3A1849E9C6008E921C /* Images.xcassets */,
@@ -142,6 +156,34 @@
 				D4A9FC4A1849E9C6008E921C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4A9FC571849F232008E921C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4A9FC581849F282008E921C /* txHeaderView.h */,
+				D4A9FC591849F282008E921C /* txHeaderView.m */,
+				D4A9FC5F1849F6A7008E921C /* txContentView.h */,
+				D4A9FC601849F6A7008E921C /* txContentView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D4A9FC5B1849F31D008E921C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4A9FC5C1849F361008E921C /* txMainViewController.h */,
+				D4A9FC5D1849F361008E921C /* txMainViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D4A9FC62184A097C008E921C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4A9FC63184A0991008E921C /* TXDatePickerDemo.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4A9FC331849E9C6008E921C /* InfoPlist.strings in Resources */,
+				D4A9FC64184A0991008E921C /* TXDatePickerDemo.png in Resources */,
 				D4A9FC3B1849E9C6008E921C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4A9FC391849E9C6008E921C /* txAppDelegate.m in Sources */,
+				D4A9FC5E1849F361008E921C /* txMainViewController.m in Sources */,
 				D4A9FC351849E9C6008E921C /* main.m in Sources */,
+				D4A9FC5A1849F282008E921C /* txHeaderView.m in Sources */,
+				D4A9FC611849F6A7008E921C /* txContentView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,8 +400,6 @@
 		D4A9FC521849E9C6008E921C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TXDatePickerDemo/TXDatePickerDemo-Prefix.pch";
 				INFOPLIST_FILE = "TXDatePickerDemo/TXDatePickerDemo-Info.plist";
@@ -367,8 +411,6 @@
 		D4A9FC531849E9C6008E921C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TXDatePickerDemo/TXDatePickerDemo-Prefix.pch";
 				INFOPLIST_FILE = "TXDatePickerDemo/TXDatePickerDemo-Info.plist";
